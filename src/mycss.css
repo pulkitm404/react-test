@@ -1,0 +1,90 @@
+body {
+  font-family: 'Baloo Da 2', cursive;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+a:hover {
+  color: #eb4d4d;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  height: 90px;
+  border-bottom: outset;
+  border-color: black;
+}
+
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 19px;
+  color: black;
+}
+
+header nav,
+header nav ul,
+header nav ul li {
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+header nav {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li.last {
+  margin: 0;
+}
+
+header nav ul li a {
+  font-size: 15px;
+  line-height: normal;
+}
+
+#logod {
+  color: #eb4d4d;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img/saif-partners.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+/*# sourceMappingURL=mycss.css.map */
